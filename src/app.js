@@ -6,7 +6,7 @@ const port = 3000
 
 app.use(express.static('public'));
 
-app.get('/', (req, res)=>{
+    app.get('/', (req, res)=>{
     console.log('hola')
     const file = fs.readFileSync(path.resolve('public/index.html'));
     res.end(file);
